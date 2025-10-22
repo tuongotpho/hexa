@@ -1,0 +1,17 @@
+{
+  "short_name": "Supabase Chat",
+  "name": "Supabase Real-time Chat",
+  "description": "A simple real-time chat application for sending messages and images, powered by a Supabase backend.",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/4232/4232102.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#111827",
+  "background_color": "#111827"
+}

@@ -1,0 +1,5 @@
+{
+  "name": "Hexa",
+  "description": "A simple real-time chat application for sending messages and images, powered by a Supabase backend.",
+  "requestFramePermissions": []
+}
