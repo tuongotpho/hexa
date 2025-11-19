@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TeamSync - Internal Chat</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              'primary': '#4f46e5',
+              'primary-hover': '#4338ca',
+              'secondary': '#1f2937',
+              'background': '#111827',
+              'surface': '#1f2937',
+              'text-primary': '#f9fafb',
+              'text-secondary': '#9ca3af',
+              'accent': '#3b82f6',
+            },
+            animation: {
+              'spin-slow': 'spin 3s linear infinite',
+              'pulse-fast': 'pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body class="bg-background text-text-primary">
+    <div id="root"></div>
+    <script type="importmap">
+      {
+        "imports": {
+          "react": "https://esm.sh/react@18.2.0",
+          "react-dom/client": "https://esm.sh/react-dom@18.2.0/client",
+          "firebase/app": "https://esm.sh/firebase@10.12.2/app",
+          "firebase/auth": "https://esm.sh/firebase@10.12.2/auth",
+          "firebase/firestore": "https://esm.sh/firebase@10.12.2/firestore",
+          "firebase/storage": "https://esm.sh/firebase@10.12.2/storage",
+          "@google/genai": "https://esm.sh/@google/genai"
+        }
+      }
+    </script>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
